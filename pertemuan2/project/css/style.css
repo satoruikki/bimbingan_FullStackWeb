@@ -1,0 +1,68 @@
+body{
+background-image: url('../image/gambar.jpg');
+}
+
+.container {
+    background-color: white;
+    width: 800px;
+    margin: 0 auto;
+    border: 2px solid gray;
+}
+
+.header {
+    padding: 20px;
+}
+
+.header ul {
+    display: flex;
+    list-style: none;
+    margin-left: -42px;
+}
+
+.header ul li {
+    margin-right: 30px;
+}
+
+.header ul li a {
+    text-decoration: none;
+    color: #2165f6;
+    font-size: 20px;
+    padding: 8px;
+    border-radius: 8px;
+}
+
+.header ul li a:hover{
+    background-color: #2165f6;
+    color: white;
+    transition:  0.3s;
+}
+
+.hero {
+    background-image: url("../image/asta.jpg");
+    background-size: cover;
+    height: 400px;
+    background-position: 0-45px;
+    border-top: 2px solid gray;
+    border-bottom: 5px solid gray;
+}
+
+.artikel {
+    margin: 20px;
+}
+
+.judul p {
+    margin-top: -20px;
+    font-size: 14px;
+}
+
+.deskripsi {
+    text-align: justify;
+}
+
+.footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 6px;
+    letter-spacing: 2px;
+}

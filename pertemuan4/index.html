@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pertemuan 4 - JavaScript</title>
+</head>
+<body>
+
+
+    <h1 id="tes">Judul 1</h1>
+    <h1 id="tes1">Judul 2</h1>
+
+
+
+    
+    <h2>Nilai dibawah :</h2>
+
+    <h2 id="nilai">30</h2>
+
+    <h2 id="hasil">Hasil</h2>
+
+    <h3>Umur saya : <span id="umur">400</span></h3>
+    <h3>Hasil : <span id="seleksi"></span></h3>
+
+    <script>
+
+        // variavle dan konstanta
+        let x = 10
+        let y = 20
+        document.write(x)
+        document.write(y)
+        document.write("<br>")
+        x = y
+        y = x
+
+        document.write("Ini text dari javasript")
+        document.write("<br>")
+        document.write(x + y)
+        
+        document.getElementById('tes').innerHTML = x + y
+
+        document.getElementById('tes').style.color = 'gray'
+
+        document.getElementById('tes1').style.color = 'skyblue'
+
+        // percabangan (if, else if, else)
+        // gerbang logika ( AND OR NOT )
+        // AND = &&
+        // OR = ||
+        // NOT = !=
+
+        let nilai = document.getElementById('nilai')
+
+        let hasil = document.getElementById('hasil')
+
+        let angka = nilai.innerHTML
+
+        angka = 20
+        nilai.innerHTML = 30
+
+        if (nilai.innerHTML == 20 ) {
+            nilai.style.color = 'blue'
+            hasil.innerHTML = 'angka diatas nilainya dua puluh'
+        }
+
+        else if (nilai.innerHTML == 30) {
+            nilai.style.color = 'green'
+            hasil.innerHTML = 'angka diatas nilainya tiga puluh'
+        }
+
+        else {
+            nilai.style.color = 'red'
+            hasil.innerHTML = 'angka diatas nilainya tidak sama'
+        }
+
+        let umur = document.getElementById('umur')
+        let seleksi = document.getElementById('seleksi')
+        
+
+        if (umur.innerHTML >= 80) {
+            seleksi.innerHTML = 'Lansia'
+        }
+
+        else if (umur.innerHTML < 80 && umur.innerHTML >= 40){
+            seleksi.innerHTML = 'Orang tua'
+        }
+
+        else if (umur.innerHTML < 40 && umur.innerHTML >= 20) {
+            seleksi.innerHTML = 'Anak Muda'
+        }
+
+        else if (umur.innerHTML < 20 && umur.innerHTML >=1) {
+            seleksi.innerHTML = 'Anak-anak'
+        }
+
+        else {
+            seleksi.innerHTML = 'Anda tidak pernah dilahirkan'
+        }
+
+    </script>
+
+
+
+</body>
+</html>
