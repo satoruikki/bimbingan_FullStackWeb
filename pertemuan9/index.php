@@ -40,6 +40,8 @@ $hasil = mysqli_query($koneksi, $sql);
     <div class="container">
         <h1 class="text-center">Data Mahasiswa</h1>
 
+        <a class="btn btn-success mb-4" href="create.php">Tambah Data</a>
+
         <table class="table table-bordered table-hover">
             <thead>
                 <tr>
@@ -49,6 +51,7 @@ $hasil = mysqli_query($koneksi, $sql);
                     <th scope="col">Jurusan</th>
                     <th scope="col">Alamat</th>
                     <th scope="col">Tanggal Lahir</th>
+                    <th scope="col">Aksi</th>
                 </tr>
             </thead>
             <tbody>
@@ -63,6 +66,14 @@ $hasil = mysqli_query($koneksi, $sql);
                             <td><?= $row['Jurusan'] ?></td>
                             <td><?= $row['Alamat'] ?></td>
                             <td><?= $row['Tanggal_lahir'] ?></td>
+                            <td>
+                                <a class="btn btn-warning" href="update.php?Stambuk=<?= $row['Stambuk'] ?>">Edit</a>
+                                <a class="btn btn-danger" onclick="return confirm('Yakin ingin menghapus data?')"
+                                    href="delete.php?stambuk=<?= $row['Stambuk'] ?>">
+                                    Hapus
+                                </a>
+                                
+                            </td>
                         </tr>
                     <?php endwhile; ?>
                 <?php } else { ?>
