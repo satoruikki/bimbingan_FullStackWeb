@@ -4,15 +4,14 @@
 <head>
     <meta charset="UTF-8">
     <meta content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no" name="viewport">
-    <title>{{ title | safe }} &mdash; {{ site_name }}</title>
+    <title>Halaman utama</title>
 
     <!-- General CSS Files -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
-        integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
 
     <!-- CSS Libraries -->
+
 
     <!-- Template CSS -->
     <link rel="stylesheet" href="onlineshop/assets/css/style.css">
@@ -27,14 +26,11 @@
             <nav class="navbar navbar-expand-lg main-navbar">
                 <form class="form-inline mr-auto">
                     <ul class="navbar-nav mr-3">
-                        <li><a href="#" data-toggle="sidebar" class="nav-link nav-link-lg"><i
-                                    class="fas fa-bars"></i></a></li>
-                        <li><a href="#" data-toggle="search" class="nav-link nav-link-lg d-sm-none"><i
-                                    class="fas fa-search"></i></a></li>
+                        <li><a href="#" data-toggle="sidebar" class="nav-link nav-link-lg"><i class="fas fa-bars"></i></a></li>
+                        <li><a href="#" data-toggle="search" class="nav-link nav-link-lg d-sm-none"><i class="fas fa-search"></i></a></li>
                     </ul>
                     <div class="search-element">
-                        <input class="form-control" type="search" placeholder="Search" aria-label="Search"
-                            data-width="250">
+                        <input class="form-control" type="search" placeholder="Search" aria-label="Search" data-width="250">
                         <button class="btn" type="submit"><i class="fas fa-search"></i></button>
                         <div class="search-backdrop"></div>
                         <div class="search-result">
@@ -58,22 +54,19 @@
                             </div>
                             <div class="search-item">
                                 <a href="#">
-                                    <img class="mr-3 rounded" width="30" src="../assets/img/products/product-3-50.png"
-                                        alt="product">
+                                    <img class="mr-3 rounded" width="30" src="../assets/img/products/product-3-50.png" alt="product">
                                     oPhone S9 Limited Edition
                                 </a>
                             </div>
                             <div class="search-item">
                                 <a href="#">
-                                    <img class="mr-3 rounded" width="30" src="../assets/img/products/product-2-50.png"
-                                        alt="product">
+                                    <img class="mr-3 rounded" width="30" src="../assets/img/products/product-2-50.png" alt="product">
                                     Drone X2 New Gen-7
                                 </a>
                             </div>
                             <div class="search-item">
                                 <a href="#">
-                                    <img class="mr-3 rounded" width="30" src="../assets/img/products/product-1-50.png"
-                                        alt="product">
+                                    <img class="mr-3 rounded" width="30" src="../assets/img/products/product-1-50.png" alt="product">
                                     Headphone Blitz
                                 </a>
                             </div>
@@ -100,8 +93,7 @@
                     </div>
                 </form>
                 <ul class="navbar-nav navbar-right">
-                    <li class="dropdown dropdown-list-toggle"><a href="#" data-toggle="dropdown"
-                            class="nav-link nav-link-lg message-toggle beep"><i class="far fa-envelope"></i></a>
+                    <li class="dropdown dropdown-list-toggle"><a href="#" data-toggle="dropdown" class="nav-link nav-link-lg message-toggle beep"><i class="far fa-envelope"></i></a>
                         <div class="dropdown-menu dropdown-list dropdown-menu-right">
                             <div class="dropdown-header">Messages
                                 <div class="float-right">
@@ -167,8 +159,7 @@
                             </div>
                         </div>
                     </li>
-                    <li class="dropdown dropdown-list-toggle"><a href="#" data-toggle="dropdown"
-                            class="nav-link notification-toggle nav-link-lg beep"><i class="far fa-bell"></i></a>
+                    <li class="dropdown dropdown-list-toggle"><a href="#" data-toggle="dropdown" class="nav-link notification-toggle nav-link-lg beep"><i class="far fa-bell"></i></a>
                         <div class="dropdown-menu dropdown-list dropdown-menu-right">
                             <div class="dropdown-header">Notifications
                                 <div class="float-right">
@@ -227,8 +218,7 @@
                             </div>
                         </div>
                     </li>
-                    <li class="dropdown"><a href="#" data-toggle="dropdown"
-                            class="nav-link dropdown-toggle nav-link-lg nav-link-user">
+                    <li class="dropdown"><a href="#" data-toggle="dropdown" class="nav-link dropdown-toggle nav-link-lg nav-link-user">
                             <img alt="image" src="../assets/img/avatar/avatar-1.png" class="rounded-circle mr-1">
                             <div class="d-sm-none d-lg-inline-block">Hi, Ujang Maman</div>
                         </a>
@@ -259,14 +249,13 @@
                     <div class="sidebar-brand sidebar-brand-sm">
                         <a href="index.html">St</a>
                     </div>
-                    <?php include "sidebar.php" ?>
-
+                    <!-- Sidebar nya -->
+                    <?php include 'sidebar.php' ?>
                 </aside>
             </div>
 
             <!-- Main Content -->
             <div class="main-content">
-                {% block content %}
                 <section class="section">
                     <div class="section-header">
                         <h1>Dashboard</h1>
@@ -349,26 +338,22 @@
                                     <canvas id="myChart" height="182"></canvas>
                                     <div class="statistic-details mt-sm-4">
                                         <div class="statistic-details-item">
-                                            <span class="text-muted"><span class="text-primary"><i
-                                                        class="fas fa-caret-up"></i></span> 7%</span>
+                                            <span class="text-muted"><span class="text-primary"><i class="fas fa-caret-up"></i></span> 7%</span>
                                             <div class="detail-value">$243</div>
                                             <div class="detail-name">Today's Sales</div>
                                         </div>
                                         <div class="statistic-details-item">
-                                            <span class="text-muted"><span class="text-danger"><i
-                                                        class="fas fa-caret-down"></i></span> 23%</span>
+                                            <span class="text-muted"><span class="text-danger"><i class="fas fa-caret-down"></i></span> 23%</span>
                                             <div class="detail-value">$2,902</div>
                                             <div class="detail-name">This Week's Sales</div>
                                         </div>
                                         <div class="statistic-details-item">
-                                            <span class="text-muted"><span class="text-primary"><i
-                                                        class="fas fa-caret-up"></i></span>9%</span>
+                                            <span class="text-muted"><span class="text-primary"><i class="fas fa-caret-up"></i></span>9%</span>
                                             <div class="detail-value">$12,821</div>
                                             <div class="detail-name">This Month's Sales</div>
                                         </div>
                                         <div class="statistic-details-item">
-                                            <span class="text-muted"><span class="text-primary"><i
-                                                        class="fas fa-caret-up"></i></span> 19%</span>
+                                            <span class="text-muted"><span class="text-primary"><i class="fas fa-caret-up"></i></span> 19%</span>
                                             <div class="detail-value">$92,142</div>
                                             <div class="detail-name">This Year's Sales</div>
                                         </div>
@@ -384,43 +369,35 @@
                                 <div class="card-body">
                                     <ul class="list-unstyled list-unstyled-border">
                                         <li class="media">
-                                            <img class="mr-3 rounded-circle" width="50"
-                                                src="../assets/img/avatar/avatar-1.png" alt="avatar">
+                                            <img class="mr-3 rounded-circle" width="50" src="../assets/img/avatar/avatar-1.png" alt="avatar">
                                             <div class="media-body">
                                                 <div class="float-right text-primary">Now</div>
                                                 <div class="media-title">Farhan A Mujib</div>
-                                                <span class="text-small text-muted">Cras sit amet nibh libero, in
-                                                    gravida nulla. Nulla vel metus scelerisque ante sollicitudin.</span>
+                                                <span class="text-small text-muted">Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin.</span>
                                             </div>
                                         </li>
                                         <li class="media">
-                                            <img class="mr-3 rounded-circle" width="50"
-                                                src="../assets/img/avatar/avatar-2.png" alt="avatar">
+                                            <img class="mr-3 rounded-circle" width="50" src="../assets/img/avatar/avatar-2.png" alt="avatar">
                                             <div class="media-body">
                                                 <div class="float-right">12m</div>
                                                 <div class="media-title">Ujang Maman</div>
-                                                <span class="text-small text-muted">Cras sit amet nibh libero, in
-                                                    gravida nulla. Nulla vel metus scelerisque ante sollicitudin.</span>
+                                                <span class="text-small text-muted">Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin.</span>
                                             </div>
                                         </li>
                                         <li class="media">
-                                            <img class="mr-3 rounded-circle" width="50"
-                                                src="../assets/img/avatar/avatar-3.png" alt="avatar">
+                                            <img class="mr-3 rounded-circle" width="50" src="../assets/img/avatar/avatar-3.png" alt="avatar">
                                             <div class="media-body">
                                                 <div class="float-right">17m</div>
                                                 <div class="media-title">Rizal Fakhri</div>
-                                                <span class="text-small text-muted">Cras sit amet nibh libero, in
-                                                    gravida nulla. Nulla vel metus scelerisque ante sollicitudin.</span>
+                                                <span class="text-small text-muted">Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin.</span>
                                             </div>
                                         </li>
                                         <li class="media">
-                                            <img class="mr-3 rounded-circle" width="50"
-                                                src="../assets/img/avatar/avatar-4.png" alt="avatar">
+                                            <img class="mr-3 rounded-circle" width="50" src="../assets/img/avatar/avatar-4.png" alt="avatar">
                                             <div class="media-body">
                                                 <div class="float-right">21m</div>
                                                 <div class="media-title">Alfa Zulkarnain</div>
-                                                <span class="text-small text-muted">Cras sit amet nibh libero, in
-                                                    gravida nulla. Nulla vel metus scelerisque ante sollicitudin.</span>
+                                                <span class="text-small text-muted">Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin.</span>
                                             </div>
                                         </li>
                                     </ul>
@@ -450,34 +427,26 @@
                                     <div class="row pb-2">
                                         <div class="col-6 col-sm-3 col-lg-3 mb-4 mb-md-0">
                                             <div class="avatar-item mb-0">
-                                                <img alt="image" src="../assets/img/avatar/avatar-5.png"
-                                                    class="img-fluid" data-toggle="tooltip" title="Alfa Zulkarnain">
-                                                <div class="avatar-badge" title="Editor" data-toggle="tooltip"><i
-                                                        class="fas fa-wrench"></i></div>
+                                                <img alt="image" src="../assets/img/avatar/avatar-5.png" class="img-fluid" data-toggle="tooltip" title="Alfa Zulkarnain">
+                                                <div class="avatar-badge" title="Editor" data-toggle="tooltip"><i class="fas fa-wrench"></i></div>
                                             </div>
                                         </div>
                                         <div class="col-6 col-sm-3 col-lg-3 mb-4 mb-md-0">
                                             <div class="avatar-item mb-0">
-                                                <img alt="image" src="../assets/img/avatar/avatar-4.png"
-                                                    class="img-fluid" data-toggle="tooltip" title="Egi Ferdian">
-                                                <div class="avatar-badge" title="Admin" data-toggle="tooltip"><i
-                                                        class="fas fa-cog"></i></div>
+                                                <img alt="image" src="../assets/img/avatar/avatar-4.png" class="img-fluid" data-toggle="tooltip" title="Egi Ferdian">
+                                                <div class="avatar-badge" title="Admin" data-toggle="tooltip"><i class="fas fa-cog"></i></div>
                                             </div>
                                         </div>
                                         <div class="col-6 col-sm-3 col-lg-3 mb-4 mb-md-0">
                                             <div class="avatar-item mb-0">
-                                                <img alt="image" src="../assets/img/avatar/avatar-1.png"
-                                                    class="img-fluid" data-toggle="tooltip" title="Jaka Ramadhan">
-                                                <div class="avatar-badge" title="Author" data-toggle="tooltip"><i
-                                                        class="fas fa-pencil-alt"></i></div>
+                                                <img alt="image" src="../assets/img/avatar/avatar-1.png" class="img-fluid" data-toggle="tooltip" title="Jaka Ramadhan">
+                                                <div class="avatar-badge" title="Author" data-toggle="tooltip"><i class="fas fa-pencil-alt"></i></div>
                                             </div>
                                         </div>
                                         <div class="col-6 col-sm-3 col-lg-3 mb-4 mb-md-0">
                                             <div class="avatar-item mb-0">
-                                                <img alt="image" src="../assets/img/avatar/avatar-2.png"
-                                                    class="img-fluid" data-toggle="tooltip" title="Ryan">
-                                                <div class="avatar-badge" title="Admin" data-toggle="tooltip"><i
-                                                        class="fas fa-cog"></i></div>
+                                                <img alt="image" src="../assets/img/avatar/avatar-2.png" class="img-fluid" data-toggle="tooltip" title="Ryan">
+                                                <div class="avatar-badge" title="Admin" data-toggle="tooltip"><i class="fas fa-cog"></i></div>
                                             </div>
                                         </div>
                                     </div>
@@ -496,8 +465,7 @@
                                         <div class="text-small float-right font-weight-bold text-muted">2,100</div>
                                         <div class="font-weight-bold mb-1">Google</div>
                                         <div class="progress" data-height="3">
-                                            <div class="progress-bar" role="progressbar" data-width="80%"
-                                                aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+                                            <div class="progress-bar" role="progressbar" data-width="80%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
                                         </div>
                                     </div>
 
@@ -505,8 +473,7 @@
                                         <div class="text-small float-right font-weight-bold text-muted">1,880</div>
                                         <div class="font-weight-bold mb-1">Facebook</div>
                                         <div class="progress" data-height="3">
-                                            <div class="progress-bar" role="progressbar" data-width="67%"
-                                                aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                            <div class="progress-bar" role="progressbar" data-width="67%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
                                         </div>
                                     </div>
 
@@ -514,8 +481,7 @@
                                         <div class="text-small float-right font-weight-bold text-muted">1,521</div>
                                         <div class="font-weight-bold mb-1">Bing</div>
                                         <div class="progress" data-height="3">
-                                            <div class="progress-bar" role="progressbar" data-width="58%"
-                                                aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                            <div class="progress-bar" role="progressbar" data-width="58%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
                                         </div>
                                     </div>
 
@@ -523,8 +489,7 @@
                                         <div class="text-small float-right font-weight-bold text-muted">884</div>
                                         <div class="font-weight-bold mb-1">Yahoo</div>
                                         <div class="progress" data-height="3">
-                                            <div class="progress-bar" role="progressbar" data-width="36%"
-                                                aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                            <div class="progress-bar" role="progressbar" data-width="36%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
                                         </div>
                                     </div>
 
@@ -532,8 +497,7 @@
                                         <div class="text-small float-right font-weight-bold text-muted">473</div>
                                         <div class="font-weight-bold mb-1">Kodinger</div>
                                         <div class="progress" data-height="3">
-                                            <div class="progress-bar" role="progressbar" data-width="28%"
-                                                aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                            <div class="progress-bar" role="progressbar" data-width="28%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
                                         </div>
                                     </div>
 
@@ -541,8 +505,7 @@
                                         <div class="text-small float-right font-weight-bold text-muted">418</div>
                                         <div class="font-weight-bold mb-1">Multinity</div>
                                         <div class="progress" data-height="3">
-                                            <div class="progress-bar" role="progressbar" data-width="20%"
-                                                aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                            <div class="progress-bar" role="progressbar" data-width="20%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
                                         </div>
                                     </div>
                                 </div>
@@ -556,20 +519,17 @@
                                         <div class="col text-center">
                                             <div class="browser browser-chrome"></div>
                                             <div class="mt-2 font-weight-bold">Chrome</div>
-                                            <div class="text-muted text-small"><span class="text-primary"><i
-                                                        class="fas fa-caret-up"></i></span> 48%</div>
+                                            <div class="text-muted text-small"><span class="text-primary"><i class="fas fa-caret-up"></i></span> 48%</div>
                                         </div>
                                         <div class="col text-center">
                                             <div class="browser browser-firefox"></div>
                                             <div class="mt-2 font-weight-bold">Firefox</div>
-                                            <div class="text-muted text-small"><span class="text-primary"><i
-                                                        class="fas fa-caret-up"></i></span> 26%</div>
+                                            <div class="text-muted text-small"><span class="text-primary"><i class="fas fa-caret-up"></i></span> 26%</div>
                                         </div>
                                         <div class="col text-center">
                                             <div class="browser browser-safari"></div>
                                             <div class="mt-2 font-weight-bold">Safari</div>
-                                            <div class="text-muted text-small"><span class="text-danger"><i
-                                                        class="fas fa-caret-down"></i></span> 14%</div>
+                                            <div class="text-muted text-small"><span class="text-danger"><i class="fas fa-caret-down"></i></span> 14%</div>
                                         </div>
                                         <div class="col text-center">
                                             <div class="browser browser-opera"></div>
@@ -579,8 +539,7 @@
                                         <div class="col text-center">
                                             <div class="browser browser-internet-explorer"></div>
                                             <div class="mt-2 font-weight-bold">IE</div>
-                                            <div class="text-muted text-small"><span class="text-primary"><i
-                                                        class="fas fa-caret-up"></i></span> 5%</div>
+                                            <div class="text-muted text-small"><span class="text-primary"><i class="fas fa-caret-up"></i></span> 5%</div>
                                         </div>
                                     </div>
                                 </div>
@@ -600,15 +559,11 @@
                                     <h4>This Week Stats</h4>
                                     <div class="card-header-action">
                                         <div class="dropdown">
-                                            <a href="#" class="dropdown-toggle btn btn-primary"
-                                                data-toggle="dropdown">Filter</a>
+                                            <a href="#" class="dropdown-toggle btn btn-primary" data-toggle="dropdown">Filter</a>
                                             <div class="dropdown-menu dropdown-menu-right">
-                                                <a href="#" class="dropdown-item has-icon"><i class="far fa-circle"></i>
-                                                    Electronic</a>
-                                                <a href="#" class="dropdown-item has-icon"><i class="far fa-circle"></i>
-                                                    T-shirt</a>
-                                                <a href="#" class="dropdown-item has-icon"><i class="far fa-circle"></i>
-                                                    Hat</a>
+                                                <a href="#" class="dropdown-item has-icon"><i class="far fa-circle"></i> Electronic</a>
+                                                <a href="#" class="dropdown-item has-icon"><i class="far fa-circle"></i> T-shirt</a>
+                                                <a href="#" class="dropdown-item has-icon"><i class="far fa-circle"></i> Hat</a>
                                                 <div class="dropdown-divider"></div>
                                                 <a href="#" class="dropdown-item">View All</a>
                                             </div>
@@ -629,41 +584,35 @@
                                             <ul class="list-unstyled list-unstyled-border">
                                                 <li class="media">
                                                     <a href="#">
-                                                        <img class="mr-3 rounded" width="50"
-                                                            src="../assets/img/products/product-1-50.png" alt="product">
+                                                        <img class="mr-3 rounded" width="50" src="../assets/img/products/product-1-50.png" alt="product">
                                                     </a>
                                                     <div class="media-body">
                                                         <div class="media-right">$405</div>
                                                         <div class="media-title"><a href="#">PlayStation 9</a></div>
-                                                        <div class="text-muted text-small">by <a href="#">Hasan
-                                                                Basri</a>
+                                                        <div class="text-muted text-small">by <a href="#">Hasan Basri</a>
                                                             <div class="bullet"></div> Sunday
                                                         </div>
                                                     </div>
                                                 </li>
                                                 <li class="media">
                                                     <a href="#">
-                                                        <img class="mr-3 rounded" width="50"
-                                                            src="../assets/img/products/product-2-50.png" alt="product">
+                                                        <img class="mr-3 rounded" width="50" src="../assets/img/products/product-2-50.png" alt="product">
                                                     </a>
                                                     <div class="media-body">
                                                         <div class="media-right">$499</div>
                                                         <div class="media-title"><a href="#">RocketZ</a></div>
-                                                        <div class="text-muted text-small">by <a href="#">Hasan
-                                                                Basri</a>
+                                                        <div class="text-muted text-small">by <a href="#">Hasan Basri</a>
                                                             <div class="bullet"></div> Sunday
                                                         </div>
                                                     </div>
                                                 </li>
                                                 <li class="media">
                                                     <a href="#">
-                                                        <img class="mr-3 rounded" width="50"
-                                                            src="../assets/img/products/product-3-50.png" alt="product">
+                                                        <img class="mr-3 rounded" width="50" src="../assets/img/products/product-3-50.png" alt="product">
                                                     </a>
                                                     <div class="media-body">
                                                         <div class="media-right">$149</div>
-                                                        <div class="media-title"><a href="#">Xiaomay Readme 4.0</a>
-                                                        </div>
+                                                        <div class="media-title"><a href="#">Xiaomay Readme 4.0</a></div>
                                                         <div class="text-muted text-small">by <a href="#">Kusnaedi</a>
                                                             <div class="bullet"></div> Tuesday
                                                         </div>
@@ -688,30 +637,23 @@
                                                 <input type="checkbox" class="custom-control-input" id="cbx-1">
                                                 <label class="custom-control-label" for="cbx-1"></label>
                                             </div>
-                                            <img class="mr-3 rounded-circle" width="50"
-                                                src="../assets/img/avatar/avatar-4.png" alt="avatar">
+                                            <img class="mr-3 rounded-circle" width="50" src="../assets/img/avatar/avatar-4.png" alt="avatar">
                                             <div class="media-body">
-                                                <div class="badge badge-pill badge-danger mb-1 float-right">Not Finished
-                                                </div>
+                                                <div class="badge badge-pill badge-danger mb-1 float-right">Not Finished</div>
                                                 <h6 class="media-title"><a href="#">Redesign header</a></h6>
-                                                <div class="text-small text-muted">Alfa Zulkarnain <div class="bullet">
-                                                    </div> <span class="text-primary">Now</span></div>
+                                                <div class="text-small text-muted">Alfa Zulkarnain <div class="bullet"></div> <span class="text-primary">Now</span></div>
                                             </div>
                                         </li>
                                         <li class="media">
                                             <div class="custom-control custom-checkbox">
-                                                <input type="checkbox" class="custom-control-input" id="cbx-2"
-                                                    checked="">
+                                                <input type="checkbox" class="custom-control-input" id="cbx-2" checked="">
                                                 <label class="custom-control-label" for="cbx-2"></label>
                                             </div>
-                                            <img class="mr-3 rounded-circle" width="50"
-                                                src="../assets/img/avatar/avatar-5.png" alt="avatar">
+                                            <img class="mr-3 rounded-circle" width="50" src="../assets/img/avatar/avatar-5.png" alt="avatar">
                                             <div class="media-body">
-                                                <div class="badge badge-pill badge-primary mb-1 float-right">Completed
-                                                </div>
+                                                <div class="badge badge-pill badge-primary mb-1 float-right">Completed</div>
                                                 <h6 class="media-title"><a href="#">Add a new component</a></h6>
-                                                <div class="text-small text-muted">Serj Tankian <div class="bullet">
-                                                    </div> 4 Min</div>
+                                                <div class="text-small text-muted">Serj Tankian <div class="bullet"></div> 4 Min</div>
                                             </div>
                                         </li>
                                         <li class="media">
@@ -719,14 +661,11 @@
                                                 <input type="checkbox" class="custom-control-input" id="cbx-3">
                                                 <label class="custom-control-label" for="cbx-3"></label>
                                             </div>
-                                            <img class="mr-3 rounded-circle" width="50"
-                                                src="../assets/img/avatar/avatar-2.png" alt="avatar">
+                                            <img class="mr-3 rounded-circle" width="50" src="../assets/img/avatar/avatar-2.png" alt="avatar">
                                             <div class="media-body">
-                                                <div class="badge badge-pill badge-warning mb-1 float-right">Progress
-                                                </div>
+                                                <div class="badge badge-pill badge-warning mb-1 float-right">Progress</div>
                                                 <h6 class="media-title"><a href="#">Fix modal window</a></h6>
-                                                <div class="text-small text-muted">Ujang Maman <div class="bullet">
-                                                    </div> 8 Min</div>
+                                                <div class="text-small text-muted">Ujang Maman <div class="bullet"></div> 8 Min</div>
                                             </div>
                                         </li>
                                         <li class="media">
@@ -734,14 +673,11 @@
                                                 <input type="checkbox" class="custom-control-input" id="cbx-4">
                                                 <label class="custom-control-label" for="cbx-4"></label>
                                             </div>
-                                            <img class="mr-3 rounded-circle" width="50"
-                                                src="../assets/img/avatar/avatar-1.png" alt="avatar">
+                                            <img class="mr-3 rounded-circle" width="50" src="../assets/img/avatar/avatar-1.png" alt="avatar">
                                             <div class="media-body">
-                                                <div class="badge badge-pill badge-danger mb-1 float-right">Not Finished
-                                                </div>
+                                                <div class="badge badge-pill badge-danger mb-1 float-right">Not Finished</div>
                                                 <h6 class="media-title"><a href="#">Remove unwanted classes</a></h6>
-                                                <div class="text-small text-muted">Farhan A Mujib <div class="bullet">
-                                                    </div> 21 Min</div>
+                                                <div class="text-small text-muted">Farhan A Mujib <div class="bullet"></div> 21 Min</div>
                                             </div>
                                         </li>
                                     </ul>
@@ -804,19 +740,11 @@
                                                         </div>
                                                     </td>
                                                     <td>
-                                                        <a href="#" class="font-weight-600"><img
-                                                                src="../assets/img/avatar/avatar-1.png" alt="avatar"
-                                                                width="30" class="rounded-circle mr-1"> Bagus Dwi
-                                                            Cahya</a>
+                                                        <a href="#" class="font-weight-600"><img src="../assets/img/avatar/avatar-1.png" alt="avatar" width="30" class="rounded-circle mr-1"> Bagus Dwi Cahya</a>
                                                     </td>
                                                     <td>
-                                                        <a class="btn btn-primary btn-action mr-1" data-toggle="tooltip"
-                                                            title="Edit"><i class="fas fa-pencil-alt"></i></a>
-                                                        <a class="btn btn-danger btn-action" data-toggle="tooltip"
-                                                            title="Delete"
-                                                            data-confirm="Are You Sure?|This action can not be undone. Do you want to continue?"
-                                                            data-confirm-yes="alert('Deleted')"><i
-                                                                class="fas fa-trash"></i></a>
+                                                        <a class="btn btn-primary btn-action mr-1" data-toggle="tooltip" title="Edit"><i class="fas fa-pencil-alt"></i></a>
+                                                        <a class="btn btn-danger btn-action" data-toggle="tooltip" title="Delete" data-confirm="Are You Sure?|This action can not be undone. Do you want to continue?" data-confirm-yes="alert('Deleted')"><i class="fas fa-trash"></i></a>
                                                     </td>
                                                 </tr>
                                                 <tr>
@@ -829,19 +757,11 @@
                                                         </div>
                                                     </td>
                                                     <td>
-                                                        <a href="#" class="font-weight-600"><img
-                                                                src="../assets/img/avatar/avatar-1.png" alt="avatar"
-                                                                width="30" class="rounded-circle mr-1"> Bagus Dwi
-                                                            Cahya</a>
+                                                        <a href="#" class="font-weight-600"><img src="../assets/img/avatar/avatar-1.png" alt="avatar" width="30" class="rounded-circle mr-1"> Bagus Dwi Cahya</a>
                                                     </td>
                                                     <td>
-                                                        <a class="btn btn-primary btn-action mr-1" data-toggle="tooltip"
-                                                            title="Edit"><i class="fas fa-pencil-alt"></i></a>
-                                                        <a class="btn btn-danger btn-action" data-toggle="tooltip"
-                                                            title="Delete"
-                                                            data-confirm="Are You Sure?|This action can not be undone. Do you want to continue?"
-                                                            data-confirm-yes="alert('Deleted')"><i
-                                                                class="fas fa-trash"></i></a>
+                                                        <a class="btn btn-primary btn-action mr-1" data-toggle="tooltip" title="Edit"><i class="fas fa-pencil-alt"></i></a>
+                                                        <a class="btn btn-danger btn-action" data-toggle="tooltip" title="Delete" data-confirm="Are You Sure?|This action can not be undone. Do you want to continue?" data-confirm-yes="alert('Deleted')"><i class="fas fa-trash"></i></a>
                                                     </td>
                                                 </tr>
                                                 <tr>
@@ -854,19 +774,11 @@
                                                         </div>
                                                     </td>
                                                     <td>
-                                                        <a href="#" class="font-weight-600"><img
-                                                                src="../assets/img/avatar/avatar-1.png" alt="avatar"
-                                                                width="30" class="rounded-circle mr-1"> Bagus Dwi
-                                                            Cahya</a>
+                                                        <a href="#" class="font-weight-600"><img src="../assets/img/avatar/avatar-1.png" alt="avatar" width="30" class="rounded-circle mr-1"> Bagus Dwi Cahya</a>
                                                     </td>
                                                     <td>
-                                                        <a class="btn btn-primary btn-action mr-1" data-toggle="tooltip"
-                                                            title="Edit"><i class="fas fa-pencil-alt"></i></a>
-                                                        <a class="btn btn-danger btn-action" data-toggle="tooltip"
-                                                            title="Delete"
-                                                            data-confirm="Are You Sure?|This action can not be undone. Do you want to continue?"
-                                                            data-confirm-yes="alert('Deleted')"><i
-                                                                class="fas fa-trash"></i></a>
+                                                        <a class="btn btn-primary btn-action mr-1" data-toggle="tooltip" title="Edit"><i class="fas fa-pencil-alt"></i></a>
+                                                        <a class="btn btn-danger btn-action" data-toggle="tooltip" title="Delete" data-confirm="Are You Sure?|This action can not be undone. Do you want to continue?" data-confirm-yes="alert('Deleted')"><i class="fas fa-trash"></i></a>
                                                     </td>
                                                 </tr>
                                                 <tr>
@@ -879,19 +791,11 @@
                                                         </div>
                                                     </td>
                                                     <td>
-                                                        <a href="#" class="font-weight-600"><img
-                                                                src="../assets/img/avatar/avatar-1.png" alt="avatar"
-                                                                width="30" class="rounded-circle mr-1"> Bagus Dwi
-                                                            Cahya</a>
+                                                        <a href="#" class="font-weight-600"><img src="../assets/img/avatar/avatar-1.png" alt="avatar" width="30" class="rounded-circle mr-1"> Bagus Dwi Cahya</a>
                                                     </td>
                                                     <td>
-                                                        <a class="btn btn-primary btn-action mr-1" data-toggle="tooltip"
-                                                            title="Edit"><i class="fas fa-pencil-alt"></i></a>
-                                                        <a class="btn btn-danger btn-action" data-toggle="tooltip"
-                                                            title="Delete"
-                                                            data-confirm="Are You Sure?|This action can not be undone. Do you want to continue?"
-                                                            data-confirm-yes="alert('Deleted')"><i
-                                                                class="fas fa-trash"></i></a>
+                                                        <a class="btn btn-primary btn-action mr-1" data-toggle="tooltip" title="Edit"><i class="fas fa-pencil-alt"></i></a>
+                                                        <a class="btn btn-danger btn-action" data-toggle="tooltip" title="Delete" data-confirm="Are You Sure?|This action can not be undone. Do you want to continue?" data-confirm-yes="alert('Deleted')"><i class="fas fa-trash"></i></a>
                                                     </td>
                                                 </tr>
                                                 <tr>
@@ -904,19 +808,11 @@
                                                         </div>
                                                     </td>
                                                     <td>
-                                                        <a href="#" class="font-weight-600"><img
-                                                                src="../assets/img/avatar/avatar-1.png" alt="avatar"
-                                                                width="30" class="rounded-circle mr-1"> Bagus Dwi
-                                                            Cahya</a>
+                                                        <a href="#" class="font-weight-600"><img src="../assets/img/avatar/avatar-1.png" alt="avatar" width="30" class="rounded-circle mr-1"> Bagus Dwi Cahya</a>
                                                     </td>
                                                     <td>
-                                                        <a class="btn btn-primary btn-action mr-1" data-toggle="tooltip"
-                                                            title="Edit"><i class="fas fa-pencil-alt"></i></a>
-                                                        <a class="btn btn-danger btn-action" data-toggle="tooltip"
-                                                            title="Delete"
-                                                            data-confirm="Are You Sure?|This action can not be undone. Do you want to continue?"
-                                                            data-confirm-yes="alert('Deleted')"><i
-                                                                class="fas fa-trash"></i></a>
+                                                        <a class="btn btn-primary btn-action mr-1" data-toggle="tooltip" title="Edit"><i class="fas fa-pencil-alt"></i></a>
+                                                        <a class="btn btn-danger btn-action" data-toggle="tooltip" title="Delete" data-confirm="Are You Sure?|This action can not be undone. Do you want to continue?" data-confirm-yes="alert('Deleted')"><i class="fas fa-trash"></i></a>
                                                     </td>
                                                 </tr>
                                                 <tr>
@@ -929,19 +825,11 @@
                                                         </div>
                                                     </td>
                                                     <td>
-                                                        <a href="#" class="font-weight-600"><img
-                                                                src="../assets/img/avatar/avatar-1.png" alt="avatar"
-                                                                width="30" class="rounded-circle mr-1"> Bagus Dwi
-                                                            Cahya</a>
+                                                        <a href="#" class="font-weight-600"><img src="../assets/img/avatar/avatar-1.png" alt="avatar" width="30" class="rounded-circle mr-1"> Bagus Dwi Cahya</a>
                                                     </td>
                                                     <td>
-                                                        <a class="btn btn-primary btn-action mr-1" data-toggle="tooltip"
-                                                            title="Edit"><i class="fas fa-pencil-alt"></i></a>
-                                                        <a class="btn btn-danger btn-action" data-toggle="tooltip"
-                                                            title="Delete"
-                                                            data-confirm="Are You Sure?|This action can not be undone. Do you want to continue?"
-                                                            data-confirm-yes="alert('Deleted')"><i
-                                                                class="fas fa-trash"></i></a>
+                                                        <a class="btn btn-primary btn-action mr-1" data-toggle="tooltip" title="Edit"><i class="fas fa-pencil-alt"></i></a>
+                                                        <a class="btn btn-danger btn-action" data-toggle="tooltip" title="Delete" data-confirm="Are You Sure?|This action can not be undone. Do you want to continue?" data-confirm-yes="alert('Deleted')"><i class="fas fa-trash"></i></a>
                                                     </td>
                                                 </tr>
                                             </tbody>
@@ -952,31 +840,26 @@
                         </div>
                     </div>
                 </section>
-                {% endblock %}
             </div>
             <footer class="main-footer">
                 <div class="footer-left">
-                    Copyright &copy; 2018 <div class="bullet"></div> Design By <a href="https://nauv.al/">Muhamad Nauval
-                        Azhar</a>
+                    Copyright &copy; 2018 <div class="bullet"></div> Design By <a href="https://nauv.al/">Muhamad Nauval Azhar</a>
                 </div>
                 <div class="footer-right">
                     {{ version }}
                 </div>
             </footer>
         </div>
+
     </div>
 
     <!-- General JS Scripts -->
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-        crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.nicescroll/3.7.6/jquery.nicescroll.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
-    <script src="../assets/js/stisla.js"></script>
+    <script src="assets/js/stisla.js"></script>
 
     <!-- JS Libraies -->
     {% block plugins_js %}{% endblock %}
