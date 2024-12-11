@@ -1,12 +1,12 @@
-<?php 
+<?php
 
 include '../../config/koneksi.php';
 // var_dump($_POST);
 
-if(isset($_POST['submit'])) {
+if (isset($_POST['submit'])) {
 
 
-    $nama = $_POST ['nama_kategori'];
+    $nama = $_POST['nama_kategori'];
 
     $sql = "INSERT INTO tb_kategori (nama_kategori)
             VALUES ('$nama')
@@ -19,9 +19,7 @@ if(isset($_POST['submit'])) {
                 window.location.href="index_kategori.php";
             </script>
         ';
-    }
-
-    else {
+    } else {
         echo '
             <script>
                 alert("Gagal tambah data");
@@ -48,7 +46,7 @@ if(isset($_POST['submit'])) {
 <head>
     <meta charset="UTF-8">
     <meta content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no" name="viewport">
-    <title>Halaman admin</title>
+    <title>Halaman kategori</title>
 
     <!-- General CSS Files -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
@@ -307,21 +305,28 @@ if(isset($_POST['submit'])) {
                     <!-- Sidebar nya -->
                     <!-- <?php include '../sidebar.php' ?> -->
                     <ul class="sidebar-menu">
-    <li class="menu-header">Dashboard</li>
-    <li class="active"><a class="nav-link" href="../../../index.php"><i class="fas fa-columns"></i>Dashboard</a></li>
-    <li class="menu-header">Fitur</li>
-    <li class=""><a class="nav-link" href=""><i class="fas fa-columns"></i>Akun</a></li>
-    <li class=""><a class="nav-link" href=""><i class="fas fa-columns"></i>Transaksi</a></li>
-    <li class=""><a class="nav-link" href=""><i class="fas fa-columns"></i>Produk</a></li>
-    <li class=""><a class="nav-link" href="index_kategori.php"><i class="fas fa-columns"></i>Kategori</a></li>
-    <li class=""><a class="nav-link" href="onlineshop/admin/data_admin/index_admin.php"><i class="fas fa-columns"></i>Admin</a></li>
-    
+                        <li class="menu-header">Dashboard</li>
+                        <li class="active"><a class="nav-link" href="../../../index.php"><i
+                                    class="fas fa-columns"></i>Dashboard</a></li>
+                        <li class="menu-header">Fitur</li>
+                        <li class=""><a class="nav-link" href="../data_akun/index_akun.php"><i
+                                    class="fas fa-columns"></i>Akun</a></li>
+                        <li class=""><a class="nav-link" href=""><i class="fas fa-columns"></i>Transaksi</a></li>
+                        <li class=""><a class="nav-link" href="../data_produk/index_produk.php"><i
+                                    class="fas fa-columns"></i>Produk</a></li>
+                        <li class="active"><a class="nav-link" href="index_kategori.php"><i
+                                    class="fas fa-columns"></i>Kategori</a></li>
+                        <li class=""><a class="nav-link" href="onlineshop/admin/data_admin/index_admin.php"><i
+                                    class="fas fa-columns"></i>Admin</a></li>
 
-    <div class="mt-4 mb-4 p-3 hide-sidebar-mini">
-        <a href="https://getstisla.com/docs" class="btn btn-primary btn-lg btn-block btn-icon-split">
-            <i class="fas fa-rocket"></i> Documentation
-        </a>
-    </div>
+
+                        <div class="mt-4 mb-4 p-3 hide-sidebar-mini">
+                            <a href="https://getstisla.com/docs"
+                                class="btn btn-primary btn-lg btn-block btn-icon-split">
+                                <i class="fas fa-rocket"></i> Documentation
+                            </a>
+                        </div>
+                    </ul>
                 </aside>
             </div>
 
@@ -329,7 +334,7 @@ if(isset($_POST['submit'])) {
             <div class="main-content">
                 <section class="section">
                     <div class="section-header">
-                        <h1>Tambah Kategori  </h1>
+                        <h1>Tambah Kategori </h1>
                         <div class="section-header-breadcrumb">
                             <div class="breadcrumb-item active"><a href="#">Dashboard</a></div>
                             <div class="breadcrumb-item"><a href="#">Bootstrap Components</a></div>
@@ -388,7 +393,8 @@ if(isset($_POST['submit'])) {
 
                                         </div>
                                         <div class="card-footer text-right">
-                                            <button class="btn btn-primary mr-1" name="submit" type="submit">Submit</button>
+                                            <button class="btn btn-primary mr-1" name="submit"
+                                                type="submit">Submit</button>
                                             <button class="btn btn-secondary" type="reset">Reset</button>
                                         </div>
                                     </div>

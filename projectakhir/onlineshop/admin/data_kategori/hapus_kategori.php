@@ -4,7 +4,7 @@ include '../../config/koneksi.php';
 
 $id = $_GET['id'];
 
-$sql = "DELETE FROM tb_kategori WHERE id=$id";
+$sql = "DELETE FROM tb_kategori WHERE id = $id";
 
 if ($koneksi->query($sql) === TRUE) {
     echo "

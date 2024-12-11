@@ -254,7 +254,16 @@
                         <a href="index.html">St</a>
                     </div>
                     <!-- Sidebar nya -->
-                    <?php include '../sidebar.php' ?>
+                    <!-- <?php include '../sidebar.php' ?> -->
+                    <ul class="sidebar-menu">
+                        <li class="menu-header">Dashboard</li>
+                        <li class=""><a class="nav-link" href="../index.php"><i class="fas fa-columns"></i>Dashboard</a></li>
+                        <li class="menu-header">Fitur</li>
+                        <li class=""><a class="nav-link" href="../data_akun/index_akun.php"><i class="fas fa-columns"></i>Akun</a></li>
+                        <li class=""><a class="nav-link" href=""><i class="fas fa-columns"></i>Transaksi</a></li>
+                        <li class=""><a class="nav-link" href="../data_produk/index_produk.php"><i class="fas fa-columns"></i>Produk</a></li>
+                        <li class=""><a class="nav-link" href="../data_kategori/index_kategori.php"><i class="fas fa-columns"></i>Kategori</a></li>
+                        <li class="active"><a class="nav-link" href="index_admin.php"><i class="fas fa-columns"></i>Admin</a></li>
                 </aside>
             </div>
 
@@ -262,7 +271,7 @@
             <div class="main-content">
             <section class="section">
           <div class="section-header">
-            <h1>Table</h1>
+            <h1>Data Admin</h1>
             <div class="section-header-breadcrumb">
               <div class="breadcrumb-item active"><a href="#">Dashboard</a></div>
               <div class="breadcrumb-item"><a href="#">Bootstrap Components</a></div>
@@ -276,7 +285,7 @@
               <div class="col-12 col-md-12 col-lg-12">
                 <div class="card">
                   <div class="card-header">
-                    <a href="tambah_admin.php" class="btn btn-success">Tambah Data</a>
+                    <a href="tambah_admin.php" class="btn btn-success">Tambah Admin</a>
                   </div>
                   <div class="card-body">
                     <table class="table">

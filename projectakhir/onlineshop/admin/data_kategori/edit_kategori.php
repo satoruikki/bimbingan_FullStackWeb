@@ -1,20 +1,20 @@
-<?php 
+<?php
 
 include '../../config/koneksi.php';
 // var_dump($_POST);
 
-$id = $_GET ['id'];
+$id = $_GET['id'];
 
 $sql = "SELECT * FROM tb_kategori WHERE id=$id";
 $query_lama = mysqli_query($koneksi, $sql);
-$data_lama= $query_lama-> fetch_assoc();
+$data_lama = $query_lama->fetch_assoc();
 
 // var_dump($data_lama);
 
-if(isset($_POST['submit'])) {
+if (isset($_POST['submit'])) {
 
 
-    $nama = $_POST ['nama_kategori'];
+    $nama = $_POST['nama_kategori'];
 
 
     $sql = "
@@ -30,9 +30,7 @@ if(isset($_POST['submit'])) {
                 window.location.href="index_kategori.php";
             </script>
         ';
-    }
-
-    else {
+    } else {
         echo '
             <script>
                 alert("Gagal tambah data");
@@ -59,7 +57,7 @@ if(isset($_POST['submit'])) {
 <head>
     <meta charset="UTF-8">
     <meta content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no" name="viewport">
-    <title>Halaman admin</title>
+    <title>Halaman kategori</title>
 
     <!-- General CSS Files -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
@@ -317,21 +315,28 @@ if(isset($_POST['submit'])) {
                     </div>
                     <!-- Sidebar nya -->
                     <ul class="sidebar-menu">
-    <li class="menu-header">Dashboard</li>
-    <li class="active"><a class="nav-link" href="../../../index.php"><i class="fas fa-columns"></i>Dashboard</a></li>
-    <li class="menu-header">Fitur</li>
-    <li class=""><a class="nav-link" href=""><i class="fas fa-columns"></i>Akun</a></li>
-    <li class=""><a class="nav-link" href=""><i class="fas fa-columns"></i>Transaksi</a></li>
-    <li class=""><a class="nav-link" href=""><i class="fas fa-columns"></i>Produk</a></li>
-    <li class=""><a class="nav-link" href="index_kategori.php"><i class="fas fa-columns"></i>Kategori</a></li>
-    <li class=""><a class="nav-link" href="../data_admin/index_admin.php"><i class="fas fa-columns"></i>Admin</a></li>
-    
+                        <li class="menu-header">Dashboard</li>
+                        <li class="active"><a class="nav-link" href="../../../index.php"><i
+                                    class="fas fa-columns"></i>Dashboard</a></li>
+                        <li class="menu-header">Fitur</li>
+                        <li class=""><a class="nav-link" href="../data_akun/index_akun.php"><i
+                                    class="fas fa-columns"></i>Akun</a></li>
+                        <li class=""><a class="nav-link" href=""><i class="fas fa-columns"></i>Transaksi</a></li>
+                        <li class=""><a class="nav-link" href="../data_produk/index_produk.php"><i
+                                    class="fas fa-columns"></i>Produk</a></li>
+                        <li class=""><a class="nav-link" href="index_kategori.php"><i
+                                    class="fas fa-columns"></i>Kategori</a></li>
+                        <li class=""><a class="nav-link" href="../data_admin/index_admin.php"><i
+                                    class="fas fa-columns"></i>Admin</a></li>
 
-    <div class="mt-4 mb-4 p-3 hide-sidebar-mini">
-        <a href="https://getstisla.com/docs" class="btn btn-primary btn-lg btn-block btn-icon-split">
-            <i class="fas fa-rocket"></i> Documentation
-        </a>
-    </div>
+
+                        <div class="mt-4 mb-4 p-3 hide-sidebar-mini">
+                            <a href="https://getstisla.com/docs"
+                                class="btn btn-primary btn-lg btn-block btn-icon-split">
+                                <i class="fas fa-rocket"></i> Documentation
+                            </a>
+                        </div>
+                    </ul>
                 </aside>
             </div>
 
@@ -362,14 +367,14 @@ if(isset($_POST['submit'])) {
                                                 <div class="col-md-6">
                                                     <div class="form-group">
                                                         <label>Nama Kategori</label>
-                                                        <input required value="<?= $data_lama['nama_kategori']?>" type="text" name="nama_kategori"
-                                                            class="form-control">
+                                                        <input required value="<?= $data_lama['nama_kategori'] ?>"
+                                                            type="text" name="nama_kategori" class="form-control">
                                                     </div>
                                                 </div>
                                                 <!-- <div class="col-md-6">
                                                     <div class="form-group">
                                                         <label>Username</label>
-                                                        <input required value="<?= $data_lama['username']?> type="text" name="username"
+                                                        <input required value="<?= $data_lama['username'] ?> type="text" name="username"
                                                             class="form-control">
                                                     </div>
                                                 </div> -->
@@ -380,7 +385,7 @@ if(isset($_POST['submit'])) {
                                                     <div class="form-group">
                                                         <label>Password</label>
                                                         <input type="password" name="password" class="form-control">
-                                                        <input value="<?= $data_lama['password']?> " type="hidden" name="password_lama" class="form-control">
+                                                        <input value="<?= $data_lama['password'] ?> " type="hidden" name="password_lama" class="form-control">
                                                     </div>
                                                 </div>
 
@@ -398,7 +403,8 @@ if(isset($_POST['submit'])) {
 
                                         </div>
                                         <div class="card-footer text-right">
-                                            <button class="btn btn-primary mr-1" name="submit" type="submit">Submit</button>
+                                            <button class="btn btn-primary mr-1" name="submit"
+                                                type="submit">Submit</button>
                                             <button class="btn btn-secondary" type="reset">Reset</button>
                                         </div>
                                     </div>
